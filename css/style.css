@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+		url('fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f0f0f0;
+	gap: 20px;
+	font-size: 14px;
+}
+
+.bg {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #e0e0e0;
+	background-color: #f9f9f9;
+	transition: all 0.4s ease;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.active-bg {
+	border-radius: 20px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+	transform: scale(1.1);
+	background-color: #e8f0fe;
+}
+
+.stylized-input {
+	width: 200px;
+	padding: 10px 15px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 25px;
+	outline: none;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+.stylized-input::placeholder {
+	color: #aaa;
+}
+
+.stylized-input:focus,
+.stylized-input:hover {
+	border-color: #007bff;
+	box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+	background-color: #eef8ff;
+}
+
+.help-button {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	border: 2px solid #007bff;
+	background-color: #eef8ff;
+	color: #007bff;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+	transition: all 0.3s ease;
+	display: inline-block;
+	outline: none;
+}
+
+.help-button:hover,
+.help-button:focus,
+.help-button.active {
+	background-color: #cceeff;
+	box-shadow: 0 6px 8px rgba(0, 123, 255, 0.4);
+}
+
+.help-text {
+	display: none;
+	padding: 10px 15px;
+	background-color: #f8f9fa;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color: #333;
+	line-height: 1.5;
+	text-align: center;
+}
